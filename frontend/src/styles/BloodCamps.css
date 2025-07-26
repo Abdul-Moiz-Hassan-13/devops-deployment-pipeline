@@ -1,0 +1,91 @@
+/* Styles for the Blood Receiving Camps Cards */
+.camps-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .camp-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .camp-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .camp-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .camp-card p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .camp-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .camp-card a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+
+.heading {
+  text-align: center;       /* Center the text horizontally */
+  color: white;             /* Make the text color white */
+  background-color: transparent;   /* No background for the heading */
+  padding: 20px 0;          /* Add padding for spacing around the heading */
+  font-size: 2.5em;         /* Optional: adjust font size */
+  margin: 0;                /* Remove any extra margin */
+}
+
+.camps-container {
+  display: flex;
+  flex-direction: row;   /* Stack the cards vertically */
+  align-items: center;      /* Center the cards horizontally */
+  padding-top: 40px;        /* Push the cards down by adding top padding */
+}
+
+.camp-card {
+  background-color: white;  /* Card background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add shadow for card */
+  padding: 20px;
+  margin-bottom: 20px;      /* Space between cards */
+  width: 400px;             /* Set a fixed width for the cards */
+  border-radius: 8px;       /* Rounded corners for the card */
+  text-align: left;         /* Align the text inside the card to the left */
+}
+
+.camp-card h3 {
+  margin-top: 0;            /* Remove the top margin for the title */
+}
+
+.camp-card p {
+  margin: 5px 0;            /* Add some space between paragraphs */
+}
+
+a {
+  color: #007BFF;           /* Link color */
+  text-decoration: none;    /* Remove underline from links */
+}
+
+.donationCamps{
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}

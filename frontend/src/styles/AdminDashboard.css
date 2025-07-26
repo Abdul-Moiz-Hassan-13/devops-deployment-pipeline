@@ -1,0 +1,14 @@
+/* Styling the static image container */
+.static-image-container {
+    display: flex;
+    justify-content: center; /* Center align the image horizontally */
+     /* Add more space between navbar and the image */
+    width:700px;
+    height:200px;
+  }
+
+  .message
+  {
+    margin-top: 50px;
+  }
+  

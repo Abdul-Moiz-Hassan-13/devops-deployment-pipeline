@@ -1,0 +1,151 @@
+/* Dashboard Container */
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Keep content aligned to top */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;  /* Ensures navbar spans full width */
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  background-color: white;
+  color: #5c6bc0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #3f51b5;
+  color: white;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Max width for larger screens */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading for Dashboard */
+.dashboard-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Profile Image */
+.main-image {
+  width: 300px;  /* Larger image size */
+  height: auto;   /* Maintain aspect ratio */
+  object-fit: cover;
+  margin: 20px 0;
+  border-radius: 0px;  /* No circular border */
+  border: 3px solid #5c6bc0;
+}
+
+/* Catchy Phrase */
+.catchy-phrase {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f51b5;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES - RESPONSIVENESS */
+
+/* For Tablets and Larger Devices (portrait and landscape) */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .nav-buttons button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .main-image {
+    width: 250px;  /* Slightly smaller image */
+  }
+
+  .dashboard-card {
+    padding: 15px;
+    margin: 10px;  /* Reduced margin */
+  }
+}
+
+/* For Mobile Devices (portrait) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;  /* Stack navbar items */
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    flex-direction: column;  /* Stack buttons vertically */
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .nav-buttons button {
+    width: 100%;  /* Full width buttons */
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .profile-image {
+    width: 200px;  /* Smaller image on mobile */
+  }
+
+  .dashboard-card {
+    padding: 10px;
+    margin: 0;  /* Remove margin for mobile */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .catchy-phrase {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+}

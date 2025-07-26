@@ -1,0 +1,114 @@
+/* Blood Camp Management Container */
+.blood-camp-management-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading */
+  .blood-camp-management-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Blood Camps List */
+  .blood-camps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Blood Camp Card */
+  .blood-camp-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 350px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blood-camp-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .blood-camp-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .blood-camp-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .blood-camp-card button {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blood-camp-card button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .blood-camp-management-container {
+      padding: 15px;
+    }
+  
+    .blood-camp-card {
+      padding: 15px;
+    }
+  
+    .blood-camp-card button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blood-camp-management-container {
+      padding: 10px;
+    }
+  
+    .blood-camp-card {
+      padding: 10px;
+    }
+  
+    .blood-camp-card button {
+      width: 100%;
+    }
+  
+    .blood-camps-list {
+      grid-template-columns: 1fr;
+    }
+  }

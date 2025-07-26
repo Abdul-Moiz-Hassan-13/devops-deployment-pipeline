@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body setup with Indigo background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #6135d3; /* Indigo background color */
+  color: #fff; /* White text color */
+}
+
+/* Center the content on the screen */
+.user-type-selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff; /* White text color */
+  margin-bottom: 5%;
+  margin-top: -5%;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 7%;
+}
+
+/* Card container for the user type selection */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on the card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Button styling */
+.user-type-selection-button {
+  background-color: #007BFF; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Button hover effects */
+.user-type-selection-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active state */
+.user-type-selection-button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+    max-width: 90%; /* Take up more width on small screens */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .user-type-selection-button {
+    width: 100%;
+  }
+}

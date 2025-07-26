@@ -1,0 +1,105 @@
+/* General container for the Send Request page */
+.request-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for the form */
+  .request-form-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Input labels */
+  label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  /* Form inputs */
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; /* Remove up/down arrows from number input */
+  }
+  
+  /* Textarea */
+  textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  /* Success and error messages */
+  .success {
+    color: #2e7d32;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: #d32f2f;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Submit button */
+  button {
+    background-color: #2e84f4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1f6fa3;
+  }
+  
+  /* Input fields focus */
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #2e84f4;
+    box-shadow: 0 0 10px rgba(46, 132, 244, 0.3);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .request-form-container {
+      padding: 15px;
+    }
+  
+    .request-form-container h2 {
+      font-size: 24px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+  

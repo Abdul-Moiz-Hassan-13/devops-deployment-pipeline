@@ -1,0 +1,85 @@
+/* Styling for each workshop card */
+.workshop-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;  /* Adjusted to fit better */
+  height: auto;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;  /* Space between cards */
+}
+
+/* Hover effect on cards */
+.workshop-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.workshop-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Paragraph styling for the details inside each card */
+.workshop-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Strong text color */
+.workshop-card strong {
+  color: #333;
+}
+
+/* Container for the entire workshops section */
+.workshops-container {
+  margin: 40px auto;  /* Added margin for better spacing */
+  text-align: center;
+  max-width: 1200px;  /* Set a max-width to center the content */
+}
+
+/* Heading for the workshops section */
+.workshops-heading {
+  margin-top: 15px;
+  color: white;
+  padding: 20px;
+  font-size: 3.0rem;
+  margin-bottom: 40px;  /* Increased bottom margin */
+}
+
+/* Flexbox container for workshop cards */
+.workshops-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Center the cards */
+  gap: 30px;  /* Adjusted gap between cards */
+  margin-bottom: 40px;  /* Added space between cards and map */
+}
+
+/* Styling for the map container */
+.workshops-container > div {
+  margin-top: 40px;
+  height: 360px;  /* Consistent height for the map */
+  width: 100%;
+}
+
+/* Optional: Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .workshop-card {
+    width: 90%;  /* Make the card take more width on smaller screens */
+  }
+
+  .workshops-cards {
+    justify-content: center;
+    gap: 20px;  /* Reduce the gap on smaller screens */
+  }
+
+  .workshops-heading {
+    font-size: 2rem;  /* Adjust font size on smaller screens */
+  }
+}

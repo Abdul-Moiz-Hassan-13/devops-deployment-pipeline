@@ -1,0 +1,111 @@
+/* General container for the achievements page */
+.achievements-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Card for Donor Level */
+.level-card {
+  background-color: #2e84f4;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.level-card h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Heading for Benefits */
+.benefits-heading h4 {
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Bullet points for benefits */
+.level-benefits ul {
+  padding-left: 20px;
+  color: black;  /* Benefits text in black */
+}
+
+.level-benefits li {
+  font-size: 16px;
+  color: black;
+}
+
+/* Add a gap between the two sections */
+.milestones-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 50px;  /* Added gap between benefits and milestones */
+  background-color: #e8eef6;
+}
+
+/* Achievements Heading */
+.achievements-heading {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Achievements Card */
+.milestone-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;  /* Space between milestones */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Milestone Title */
+.milestone-card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.milestone-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.milestone-card.achieved {
+  border-left: 5px solid #2e7d32; /* Green color for achieved milestones */
+}
+
+.milestone-card.not-achieved {
+  border-left: 5px solid #e53935; /* Red color for not achieved milestones */
+}
+
+.milestone-card.not-achieved p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .achievements-container {
+    padding: 15px;
+  }
+
+  .level-card, .milestone-card {
+    padding: 12px;
+  }
+
+  .milestones h4 {
+    font-size: 18px;
+  }
+}
